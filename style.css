@@ -39,25 +39,24 @@ main {
 h1 {
   font-size: 28px;
 }
-
-/*nav{
-  margin:0 -15px 0 -20px;
+/*menu*/
+.main-menu {
+  margin: 0; /* -15px 0 -20px;*/
   background-color: #c0fa87;
 }
 
-nav ul{
-  
+.main-menu-box {
   display: flex;
   justify-content: space-between;
   margin: 0;
   list-style-type: none;
 }
 
-nav a{
+nav a {
   text-decoration: none;
-}*/
+}
 
-/*меню-бургер*/
+/*burger-menu*/
 
 .hamburger-menu {
   background-color: #c0fa87;
@@ -111,7 +110,6 @@ nav a{
   padding: 80px 0;
   list-style: none;
   background-color: #c0fa87;
-  /*transition-duration: 0.25s;*/
 }
 
 .menu_item {
@@ -119,7 +117,6 @@ nav a{
   padding: 12px 24px;
   color: #333;
   text-decoration: none;
-  /*transition-duration: 0.25s;*/
 }
 
 .menu_item:hover {
@@ -145,7 +142,7 @@ nav a{
   /* left: 0;*/
 }
 
-/*после меню*/
+/*burger-menu ended*/
 
 .essential {
   width: 650px;
@@ -222,4 +219,27 @@ li {
 
 .less {
   width: 100px;
+}
+
+//media-queries for adaptivity
+
+//for small screens
+@media (max-width: 500px) {
+  .main-menu,
+  .main-menu-box {
+    display: none;
+  }
+  .in-center {
+    flex-direction: column;
+  }
+}
+
+//for large screens
+@media (min-width: 501px) {
+  .hamburger-menu,
+  .menu_btn,
+  .menu_btn > span,
+  .menu_box {
+    display: none;
+  }
 }
