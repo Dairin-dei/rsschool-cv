@@ -19,7 +19,7 @@ a:visited {
 }
 
 main {
-  width:900px;
+  width: 900px;
   font-family: "Montserrat'", Arial, Helvetica, sans-serif;
   margin: 0 auto;
   border: 1px solid black;
@@ -30,8 +30,8 @@ main {
   text-align: center;
 }
 
-.in-block{
-  display:flex;
+.in-block {
+  display: flex;
   align-items: center;
   text-align: left;
 }
@@ -59,96 +59,96 @@ nav a{
 
 /*меню-бургер*/
 
-.hamburger-menu{
+.hamburger-menu {
   background-color: #c0fa87;
 }
 
-#menu_toggle{
-  opacity:0;
+#menu_toggle {
+  opacity: 0;
 }
 
-.menu_btn{
-  display:flex;
+.menu_btn {
+  display: flex;
   align-items: center;
   top: 20px;
   left: 20px;
   width: 26px;
   height: 26px;
-  cursor:pointer;
+  cursor: pointer;
   z-index: 1;
 }
 
 .menu_btn > span,
 .menu_btn > span::before,
-.menu_btn > span::after{
-  display:block;
+.menu_btn > span::after {
+  display: block;
   position: absolute;
   width: 26px;
   height: 2px;
   background-color: #616161;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
 }
 
-.menu_btn > span::before{
-  content:'';
-  top:-8px
+.menu_btn > span::before {
+  content: "";
+  top: -8px;
 }
 
-.menu_btn > span::after{
-  content:'';
+.menu_btn > span::after {
+  content: "";
   top: 8px;
 }
 
-.menu_box{
-  display:block;
-  position:fixed;
-  visibility:hidden;
+.menu_box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
   top: 55px;
-  left: -100%;
+  /* left: 100%;*/
   width: 300px;
   height: 100%;
-  margin:0;
+  margin: 0;
   padding: 80px 0;
-  list-style:none;
+  list-style: none;
   background-color: #c0fa87;
-  transition-duration: .25s;
+  /*transition-duration: 0.25s;*/
 }
 
-.menu_item{
-  display:block;
+.menu_item {
+  display: block;
   padding: 12px 24px;
   color: #333;
   text-decoration: none;
-  transition-duration: .25s;
+  /*transition-duration: 0.25s;*/
 }
 
-.menu_item:hover{
-  background-color: #06e502;
+.menu_item:hover {
+  background-color: #beecbd;
 }
 
-#menu_toggle:checked ~ .menu_btn > span{
+#menu_toggle:checked ~ .menu_btn > span {
   transform: rotate(45deg);
 }
 
-#menu_toggle:checked ~ .menu_btn > span::before{
+#menu_toggle:checked ~ .menu_btn > span::before {
   top: 0;
   transform: rotate(0);
 }
 
-#menu_toggle:checked ~ .menu_btn > span::after{
+#menu_toggle:checked ~ .menu_btn > span::after {
   top: 0;
-  transform: rotate(90deg)
+  transform: rotate(90deg);
 }
 
-#menu_toggle:checked ~ .menu_box{
-  visibility:visible;
-  left:0;
+#menu_toggle:checked ~ .menu_box {
+  visibility: visible;
+  /* left: 0;*/
 }
 
 /*после меню*/
 
 .essential {
-  width:650px;
+  width: 650px;
   text-align: left;
   padding: 15px;
 }
@@ -173,7 +173,7 @@ nav a{
 }
 
 li {
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .on-left {
@@ -181,7 +181,7 @@ li {
   padding-left: 40px;
 }
 
-.contacts{
+.contacts {
   text-decoration: none;
 }
 
@@ -199,8 +199,8 @@ li {
   line-height: 30px;
 }
 
-.enlarge{
-  cursor:zoom-in
+.enlarge {
+  cursor: zoom-in;
 }
 
 .footer {
@@ -210,9 +210,7 @@ li {
   text-align: center;
   padding: 10px;
   background-color: #c0fa87;
-  
 }
-
 
 .about-me {
   text-align: justify;
