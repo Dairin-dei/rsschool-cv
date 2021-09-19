@@ -1,0 +1,227 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+}
+
+a {
+  color: #013b14;
+}
+
+a:hover {
+  color: #06e502;
+}
+
+a:visited {
+  color: #76b58b;
+}
+
+main {
+  width:900px;
+  font-family: "Montserrat'", Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.in-center {
+  display: flex;
+  text-align: center;
+}
+
+.in-block{
+  display:flex;
+  align-items: center;
+  text-align: left;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+/*nav{
+  margin:0 -15px 0 -20px;
+  background-color: #c0fa87;
+}
+
+nav ul{
+  
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav a{
+  text-decoration: none;
+}*/
+
+/*меню-бургер*/
+
+.hamburger-menu{
+  background-color: #c0fa87;
+}
+
+#menu_toggle{
+  opacity:0;
+}
+
+.menu_btn{
+  display:flex;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor:pointer;
+  z-index: 1;
+}
+
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after{
+  display:block;
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+
+.menu_btn > span::before{
+  content:'';
+  top:-8px
+}
+
+.menu_btn > span::after{
+  content:'';
+  top: 8px;
+}
+
+.menu_box{
+  display:block;
+  position:fixed;
+  visibility:hidden;
+  top: 55px;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin:0;
+  padding: 80px 0;
+  list-style:none;
+  background-color: #c0fa87;
+  transition-duration: .25s;
+}
+
+.menu_item{
+  display:block;
+  padding: 12px 24px;
+  color: #333;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu_item:hover{
+  background-color: #06e502;
+}
+
+#menu_toggle:checked ~ .menu_btn > span{
+  transform: rotate(45deg);
+}
+
+#menu_toggle:checked ~ .menu_btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu_toggle:checked ~ .menu_btn > span::after{
+  top: 0;
+  transform: rotate(90deg)
+}
+
+#menu_toggle:checked ~ .menu_box{
+  visibility:visible;
+  left:0;
+}
+
+/*после меню*/
+
+.essential {
+  width:650px;
+  text-align: left;
+  padding: 15px;
+}
+
+.contacts-skills {
+  width: 250px;
+  padding: 10px;
+  background-color: #c0fa87;
+}
+.ul_contactsskills {
+  text-align: left;
+}
+
+.photo {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  vertical-align:middle;
+}
+
+.on-left {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.contacts{
+  text-decoration: none;
+}
+
+.my-name {
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #c0fa87;
+  margin-top: -15px;
+  margin-left: -20px;
+  margin-right: -15px;
+}
+
+.list {
+  line-height: 30px;
+}
+
+.enlarge{
+  cursor:zoom-in
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #c0fa87;
+  
+}
+
+
+.about-me {
+  text-align: justify;
+}
+
+.left-padding {
+  padding-left: 10px;
+}
+
+.less {
+  width: 100px;
+}
