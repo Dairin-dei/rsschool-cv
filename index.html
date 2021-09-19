@@ -9,12 +9,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="http://yastatic.net/highlightjs/8.2/styles/solarized_light.min.css"
-      rel="stylesheet"
-    />
-
     <title>RSSchool CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/a11y-light.min.css"
+    />
   </head>
   <body>
     <main>
@@ -216,20 +215,20 @@
                 >
               </p>
               <pre><code class="js">
-                function solution(number){
-                  if (number&lt;0){
-                    return 0;
-                  }else{
-                    let sum = 0;
-                    for (let count = 1; count&lt;number; count++){
-                      if (count%3==0 || count%5==0){
-                        sum+=count;
-                      };      
-                    };
-                  return sum;
-                  }
-                 };
-                        </code></pre>
+      function solution(number){
+        if (number&lt;0){
+          return 0;
+            }else{
+              let sum = 0;
+              for (let count = 1; count&lt;number; count++){
+                if (count%3==0 || count%5==0){
+                  sum+=count;
+                };      
+              };
+        return sum;
+        }
+      };
+    </code></pre>
             </div>
           </section>
         </section>
@@ -243,9 +242,11 @@
         Made in 2021
       </footer>
     </main>
-    <script src="http://yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
     <script>
       hljs.initHighlightingOnLoad();
+    </script>
+    <script>
       let menu = document.getElementById("menu_box");
       let closeIcon = document.getElementById("menu_toggle");
       menu.addEventListener("click", handleMenuClick);
